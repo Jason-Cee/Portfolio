@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS" />
+    <title>Contact</title>
+    <meta name="description" content="" />
+    <script
+      src="https://kit.fontawesome.com/3154f23d07.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <div class="nav-bar">
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <ul class="navbar-links">
+          <li class="navbar-link">
+            <a href="/index.html" class="navbar-anchor">Home</a>
+          </li>
+          <li class="navbar-link">
+            <a href="/about.html" class="navbar-anchor">About</a>
+          </li>
+          <li class="navbar-link">
+            <a href="/resume.html" class="navbar-anchor">Resume</a>
+          </li>
+          <li class="navbar-link">
+            <a href="/projects.html" class="navbar-anchor">Projects</a>
+          </li>
+          <li class="navbar-link">
+            <a href="/contact.html" class="navbar-anchor">Contact</a>
+          </li>
+        </ul>
+        <button class="navbar-button" onclick="toggleNavbar()">
+          <img class="J" src="/images/J.png" alt="Letter J" />
+        </button>
+      </nav>
+    </div>
+    <!-- CONTACT FORM -->
+    <section>
+      <div id="contact">
+        <div class="contact-container">
+          <div class="contactinfo">
+            <div>
+              <!-- FOOTER -->
+              <h2>Contact Info</h2>
+              <ul class="info">
+                <li>
+                  <span><img src="/images/location.png" alt="Pin" /></span>
+                  <span
+                    >Retreat <br />
+                    Cape Town <br />
+                    South Africa</span
+                  >
+                </li>
+                <li>
+                  <span><img src="/images/mail.png" alt="mail" /></span>
+                  <span>jasoncee017@gmail.com</span>
+                </li>
+                <li>
+                  <span
+                    ><img src="/images/call-removebg-preview.png" alt="call"
+                  /></span>
+                  <span>076-256-2346</span>
+                </li>
+              </ul>
+            </div>
+            <ul class="sci">
+              <li>
+                <a href="https://github.com/Jason-Cee" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/jason-calvert-670866208/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <!-- FORM -->
+          <form
+            class="contactForm"
+            action="https://formspree.io/f/xknkjrlp"
+            method="POST"
+          >
+            <h2>Send a Message</h2>
+            <div class="formBox">
+              <div class="inputBox W50">
+                <input
+                  type="text"
+                  name="message"
+                  required
+                  placeholder="First Name"
+                />
+              </div>
+              <div class="inputBox W50">
+                <input type="text" name="" required placeholder="Last Name" />
+              </div>
+              <div class="inputBox W50">
+                <input
+                  type="text"
+                  name="message"
+                  required
+                  placeholder="Email Address"
+                />
+              </div>
+              <div class="inputBox W50">
+                <input
+                  type="tel"
+                  name="number"
+                  required
+                  placeholder="Mobile Number"
+                />
+              </div>
+              <div class="inputBox W100">
+                <textarea
+                  name="message"
+                  required
+                  placeholder="Write Your Message Here"
+                ></textarea>
+              </div>
+              <div class="inputBox W100">
+                <button class="btnsend" type="submit">SEND</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <div class="footer">
+      <h4>Jason Calvert</h4>
+    </div>
+    <script src="/styles/nav.js"></script>
+  </body>
+</html>

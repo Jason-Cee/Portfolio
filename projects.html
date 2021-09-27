@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS" />
+    <title>Projects</title>
+    <meta name="description" content="" />
+    <script
+      src="https://kit.fontawesome.com/3154f23d07.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="nav-bar">
+      <nav class="navbar">
+        <ul class="navbar-links">
+          <li class="navbar-link">
+            <a href="/index.html" class="navbar-anchor">Home</a>
+          </li>
+          <li class="navbar-link">
+            <a href="/about.html" class="navbar-anchor">About</a>
+          </li>
+          <li class="navbar-link">
+            <a href="/resume.html" class="navbar-anchor">Resume</a>
+          </li>
+          <li class="navbar-link">
+            <a href="/projects.html" class="navbar-anchor">Projects</a>
+          </li>
+          <li class="navbar-link">
+            <a href="/contact.html" class="navbar-anchor">Contact</a>
+          </li>
+        </ul>
+        <button class="navbar-button" onclick="toggleNavbar()">
+          <img class="J" src="/images/J.png" alt="Letter J" />
+        </button>
+      </nav>
+    </div>
+    <div class="main">
+      <!-- PROJECT CARDS -->
+      <section id="myprojects">
+        <h1><span>My</span> Projects</h1>
+        <div class="button-container">
+          <button class="btn-style" onclick="filterCards('All')">All</button>
+          <button class="btn-style" onclick="filterCards('HTML/CSS')">
+            HTML/CSS
+          </button>
+          <button class="btn-style" onclick="filterCards('Python')">
+            Python
+          </button>
+        </div>
+        <div class="project-container"></div>
+      </section>
+      <!-- <div class="footer">
+        <h4>Jason Calvert</h4>
+      </div> -->
+    </div>
+    <script src="/styles/projects.js"></script>
+    <script src="./styles/nav.js"></script>
+  </body>
+</html>
